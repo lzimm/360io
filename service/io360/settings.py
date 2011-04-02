@@ -1,0 +1,11 @@
+SECRET_KEY = ''
+
+AWS_ACCESS_KEY_ID = ""
+AWS_SECRET_ACCESS_KEY = ""
+AWS_ATTACHMENT_BUCKET = "360io.attachments"
+AWS_ATTACHMENT_BASE = "http://%s.s3.amazonaws.com" % (AWS_ATTACHMENT_BUCKET)
+
+WORKING_DIR = "/Life/360io/tmp"
+
+TWITTER_KEY = ""
+TWITTER_SECRET = ""
