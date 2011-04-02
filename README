@@ -1,6 +1,57 @@
 -- this is fairly old school work yo --
 
+so i guess its story time. so a while back, i made this blogging thing
+called pervurs (http://github.com/lzimm/pervurs) where the key idea was
+to decouple the (dynamic) commenting from the (static) content rendering
+to make it nice and robust to scale (ie: dynamic stuff is orthagonal to static,
+so when traffic spikes hit, it stays easy to keep the service running as long
+as you can tolerate a slight degradation by temporarily suspending comments,
+before it became a common practice).
 
+then i got a job at a game company and started building core server tech there,
+which was designed to operate as a homogenous cluster of app servers in a simple
+to administer distributed system (ie: each node was capable of handling a request
+from start to finish, with the only other daemons on the network being our db
+and cache servers, around which our homogenous nodes would negotiate key ownership,
+efficiently handle cache invalidations, distribute search trees, and blah blah blah).
+
+long story short, its not a bad way to learn how to program (in fact, the very
+first time i used a debugger was when i was trying to isolate a race condition, 10
+minutes after learning what a race condition even was, so funny, amirite?), and since
+i was working at a game company, i figured i might as well learn to write some c++
+(writing MMO server tech taught me java, so I figured doing something similar might 
+not be a bad way to learn me c++).
+
+so i decided to take the commenting infrastructure for pervurs (since it was simple 
+enough that i figured why the hell not, at least it'll be fast), and build that part,
+but this time, as a heterogenous cluster where different services could orthogonally
+scale more appropriately.
+
+so what i ended up with was this weird c++ template (server/shared/src/shared/request.h, etc)
+that i built slim vertical slices of all the different pipeline components off of, and shoved 
+a python app server (using twisted) in the bunch to handle more "complex" business logic.
+
+but whatever, i want more ice cream, so i'm gonna wrap this up:
+
+all the c++ daemons use stuff from /server/shared as the template crap they extend off of
+to do some stupid compile time inheritance junk and do the asynchronous socket thing via libev.
+
+the different nodes are:
+
+/server/base: i think this is the main front end http service that serves actual page requests
+
+/server/comm: this is the asynchronous message server for handling long-poll connections from clients
+
+/server/data: data storage sitting on top of bdb, this is all supposed to be asynchronous code though,
+so the db queries should really be getting spun into a separate thread or something, but i got lazy,
+so each query blocks, which is a bit screwed up.
+
+/server/log: think this was just a logging daemon, i dunno, i'm just in it for the lulz yo.
+
+/server/sync: refer to above (i forget), i think this had something to do with making sure you actually 
+got all the messages you were supposed to on your long-poll and that nothing got lost in transmission.
+
+meanwhile, business logic (python) is in /service/io360
 
 anyways, standard disclaimer:
 
