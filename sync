@@ -1,0 +1,3 @@
+#!/bin/bash
+
+rsync --exclude="*.o" --exclude="db" --exclude="*.log" --exclude="*.pyc" --exclude="/Life/360io/core.*" --exclude="server/*/build" -avz --rsh "ssh -i /Life/aws/lzimm.pem" --delete --force . root@remote.360.io:/Life/360io

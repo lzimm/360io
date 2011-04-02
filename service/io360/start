@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd server/www/templates
+cheetah c -R --nobackup
+
+cd ../wrappers
+cheetah c -R --nobackup
+
+cd ../../../bin
+twistd --pidfile /pids/twisted.pid -noy main.py --profile=/Life/360io/service/io360/profile.dump

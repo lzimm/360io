@@ -1,0 +1,55 @@
+8
+
+dir
+64
+http://as3corelib.googlecode.com/svn/trunk/src/com/adobe/webapis
+http://as3corelib.googlecode.com/svn
+
+
+
+2008-08-08T06:16:29.605969Z
+55
+mikechambers
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+374f7c76-8224-0410-aa2b-53cc4844e527
+
+events
+dir
+
+URLLoaderBase.as
+file
+
+
+
+
+2008-10-31T22:08:28.000000Z
+ade390b4d7b27cd070bed1d19493cfc5
+2008-08-08T06:16:29.605969Z
+55
+mikechambers
+
+ServiceBase.as
+file
+
+
+
+
+2008-10-31T22:08:28.000000Z
+65f58905504330880a8419d0932f2e18
+2008-08-08T06:16:29.605969Z
+55
+mikechambers
+

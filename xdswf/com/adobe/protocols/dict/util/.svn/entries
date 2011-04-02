@@ -1,0 +1,54 @@
+8
+
+dir
+64
+http://as3corelib.googlecode.com/svn/trunk/src/com/adobe/protocols/dict/util
+http://as3corelib.googlecode.com/svn
+
+
+
+2008-09-05T20:08:16.325700Z
+60
+christian.cantrell@gmail.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+374f7c76-8224-0410-aa2b-53cc4844e527
+
+SocketHelper.as
+file
+
+
+
+
+2008-10-31T22:08:28.000000Z
+040301b1a229316028eececfbb6f9664
+2008-09-05T20:08:16.325700Z
+60
+christian.cantrell@gmail.com
+has-props
+
+CompleteResponseEvent.as
+file
+
+
+
+
+2008-10-31T22:08:28.000000Z
+7929dd2f7c63a5e12ed603dcc0f5bd88
+2008-09-05T20:08:16.325700Z
+60
+christian.cantrell@gmail.com
+has-props
+

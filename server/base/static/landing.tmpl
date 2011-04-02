@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>360io</title>
+<link rel="stylesheet" href="http://media.360.io/css/io.css" type="text/css" charset="utf-8">
+<link rel="stylesheet" href="http://media.360.io/css/landing.css" type="text/css" charset="utf-8">
+</head>
+
+<body>
+
+<div id="_publisher" class="_floater"><!-- BEGIN PUBLISER -->
+    <form action="http://service.360.io/create/tail" method="POST" onsubmit="io360.publisher.post(); return false;">
+        <div id="_publishType"><ul>
+            <li class="_publish_text"><a href="javascript:io360.publisher.select('text')"><b></b><span>Text</span><b></b></a></li>
+            <li class="_publish_link"><a href="javascript:io360.publisher.select('link')"><b></b><span>Link</span><b></b></a></li>
+            <li class="_publish_pic"><a href="javascript:io360.publisher.select('pic')"><b></b><span>Picture</span><b></b></a></li>
+        </ul></div>
+        
+        <div id="_aux"><b></b>
+            <div class="_attachwrapper">
+                <a class="_ltebtn _swftarget" href="javascript:io360.publisher.auxAttachment();"><span><i></i></span></a>
+            </div>
+            <div class="_inputwrapper">
+                <input class="aux" type="text" value="" />
+            </div>
+        <b></b></div>
+        
+        <div class="_textwrapper"><textarea class="body">Write your comment here...</textarea></div>
+
+        <a href="javascript:io360.auth.toggle();" class="_publishAuth _userButton"><b></b><span>Login / Register</span><b></b></a>
+        <div class="_inputs"><span></span>
+            <div class="_inputwrapper"><input class="name" type="text" value="name" /></div>
+            <div class="_inputwrapper"><input class="email" type="text" value="email" /></div>
+        </div>
+
+        <a id="_postbtn" class="_ltebtn" href="javascript:io360.publisher.post();"><span><i>Post</i></span></a>
+    </form>
+    
+    <div id="_content">
+        <div class="about"><p><strong>360.io</strong> is a little experiment with building distributed conversations. Right now it just lets you share links with the world and attach discussions to them.</p></div>
+        <div class="twitter"><p>Given the nature of what I'm doing, its fairly obvious I'd be on twitter. You can follow me by <a href="http://www.twitter.com/360io/" target="_blank">clicking here</a>.</p></div>
+        <div class="blog"><p>There's probably going to be a lot happening over the next little while. If you want to keep up with features and follow more in depth rationale behind what I'm doing, follow my blog by <a href="http://360io.posterous.com/" target="_blank">clicking here</a>.</p></div>
+        <p style="clear: both;"></p>
+    </div>
+<!-- END PUBLISHER --></div>
+
+<div id="_tweet" class="_floater"><!-- BEGIN TWEET -->
+    <form action="http://service.360.io/create/twitter/post" method="POST" onsubmit="io360.twitter.postTweet(); return false;">
+        <p></p>
+
+        <div class="_textwrapper"><textarea class="comment" onkeyup="io360.twitter.update();"></textarea></div>
+        <a href="javascript:io360.twitter.tether();" class="_tetherTwitter _userButton"><b></b><span>Link Your Account to Twitter</span><b></b></a>
+        <div class="_count">0 / 140</div>
+
+        <a id="_tweetbtn" class="_ltebtn" href="javascript:io360.twitter.postTweet();"><span><i>Tweet</i></span></a>
+    </form>
+<!-- END TWEET --></div>
+
+<div id="_dashboard" class="_floater"><!-- BEGIN DASHBOARD -->
+    <div id="_stylemanager">          
+        <div class="_preview"><div class="_render">
+            <div class="comment"><div class="header">
+                    <div class="avatar"></div>
+                    <div class="author">By ...</div>
+                    <div class="meta"></div></div>
+                <div class="body">Look! No Hands!</div>
+            </div>
+        </div></div>
+
+        <div class="_description">
+            <p>Each comment has the following html structure: <span>(A reference for you when you apply your own style to your comments)</span></p>
+<pre>&lt;div class="comment"&gt;&lt;div class="header"&gt;
+    &lt;div class="avatar"&gt;&lt;/div&gt;
+    &lt;div class="author"&gt;By ...&lt;/div&gt;
+    &lt;div class="meta"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="body"&gt;Look! No Hands!&lt;/div&gt;&lt;/div&gt;</pre>
+        </div>
+
+        <form action="http://service.360.io/auth/style" method="POST" onsubmit="io360.style.save(); return false;">
+            <div class="_fields">
+                <div class="_textwrapper"><textarea id='_iostyle' onkeyup='io360.style.updatePreview();'></textarea></div>
+            </div>
+
+            <a id="_styleresetbtn" class="_ltebtn" href="javascript:io360.style.reset();"><span><i>Reset</i></span></a>
+            <a id="_stylesavebtn" class="_ltebtn" href="javascript:io360.style.save();"><span><i>Save</i></span></a>
+        </form>
+    </div>
+<!-- END DASHBOARD --></div>
+
+<div id="_auth" class="_floater"><!-- BEGIN AUTH -->
+    <form action="http://service.360.io/auth/login" method="POST" onsubmit="io360.auth.auth(); return false;">
+        <p></p>
+
+        <div class="_inputs"><span></span>
+            <div class="_inputwrapper"><input id="name" type="text" value="name" /></div>
+            <div class="_inputwrapper"><input id="email" type="text" value="email" /></div>
+            <div class="_inputwrapper"><input id="password" type="password" value="password" /></div>
+        </div>
+
+        <a id="_authbtn" class="_ltebtn" href="javascript:io360.auth.auth();"><span><i>Login</i></span></a>
+        <a id="swap" href="javascript:io360.auth.swapMode()">Register</a>
+    </form>
+<!-- END AUTH --></div>
+
+<div id="_floatplate" class="_floatwrap"><!-- START FLOATER -->
+    <div class="_shadow_t"></div>
+    <div class="_shadow_tr"></div>
+    <div class="_shadow_r"></div>
+    <div class="_shadow_br"></div>
+    <div class="_shadow_b"></div>
+    <div class="_shadow_bl"></div>
+    <div class="_shadow_l"></div>
+    <div class="_shadow_tl"></div>
+
+    <a href="#" onclick="io360.floater.hide(this); return false;" class="_btn_close _btn">Close</a>
+    <h1><b></b><span></span></h1>
+    <div class="_internal"></div>
+<!-- END FLOATER --></div>
+
+<!-- START IDENTITY -->
+<div id="_identity">
+    <div class="_shadow_t"></div>
+    <div class="_shadow_tr"></div>
+    <div class="_shadow_r"></div>
+    <div class="_shadow_br"></div>
+    <div class="_shadow_b"></div>
+    <div class="_shadow_bl"></div>
+    <div class="_shadow_l"></div>
+    <div class="_shadow_tl"></div>
+    
+    <div id="_logo"></div>
+    
+    <div id="_links">
+        <p>updates on <a href="http://twitter.com/360io" target="_blank">twitter</a><p>
+        <p>info on <a href="http://360io.posterous.com" target="_blank">the blog</a><p>
+    </div>
+    
+    <a href="javascript:io360.dash.toggle();" class="_btn_dash _btn">Dashboard</a>
+    <a href="javascript:io360.auth.toggle();" class="_btn_auth _btn">Auth</a>
+    <a href="javascript:io360.landing.close();" class="_btn_close _btn">Close</a>
+</div>
+<!-- END IDENTITY -->
+
+<table id="_tooltip" cellpadding="0" cellspacing="0" border="0">
+<tr class="r2"><td class="c2"></td><td class="c1"></td><td class="c0"></td><td class="c1"></td><td class="c2"></td></tr>
+<tr class="r1"><td class="c2"></td><td class="c1"></td><td class="c0"></td><td class="c1"></td><td class="c2"></td></tr>
+<tr class="r0"><td class="c2"></td><td class="c1"></td><td class="c0">
+<div><span></span>
+<table id="_toolarrow" cellpadding="0" cellspacing="0" border="0">
+<tr class="ar0"><td class="ac2"></td><td class="ac1"></td><td class="ac0"></td><td class="ac1"></td><td class="ac2"></td></tr>
+<tr class="ar1"><td class="ac2"></td><td class="ac1"></td><td class="ac0"></td><td class="ac1"></td><td class="ac2"></td></tr>
+<tr class="ar2"><td class="ac2"></td><td class="ac1"></td><td class="ac0"></td><td class="ac1"></td><td class="ac2"></td></tr>
+<tr class="ar3"><td class="ac2"></td><td class="ac1"></td><td class="ac0"></td><td class="ac1"></td><td class="ac2"></td></tr>
+<tr class="ar4"><td class="ac2"></td><td class="ac1"></td><td class="ac0"></td><td class="ac1"></td><td class="ac2"></td></tr>
+</table></div>
+</td><td class="c1"></td><td class="c2"></td></tr>
+<tr class="r1"><td class="c2"></td><td class="c1"></td><td class="c0"></td><td class="c1"></td><td class="c2"></td></tr>
+<tr class="r2"><td class="c2"></td><td class="c1"></td><td class="c0"></td><td class="c1"></td><td class="c2"></td></tr>
+</table>
+
+<script type="text/javascript" src="http://media.360.io/js/jquery.js"></script>
+<script type="text/javascript" src="http://media.360.io/js/core.js"></script>
+<script type="text/javascript" src="http://media.360.io/js/landing.js"></script>
+<script type="text/javascript">
+    io360.landing.init();
+</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%%3E%%3C/script%%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-340711-3");
+pageTracker._setDomainName(".360.io");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

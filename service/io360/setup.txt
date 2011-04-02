@@ -1,0 +1,25 @@
+yum install mysql
+yum install mysql-server
+yum install mysql-devel
+
+wget http://www.python.org/ftp/python/2.5.4/Python-2.5.4.tgz
+wget http://superb-west.dl.sourceforge.net/sourceforge/cheetahtemplate/Cheetah-2.2.1.tar.gz
+wget http://tmrc.mit.edu/mirror/twisted/Twisted/8.2/Twisted-8.2.0.tar.bz2#md5=c85f151999df3ecf04c49a781b4438d2
+wget http://www.zope.org/Products/ZopeInterface/3.3.0/zope.interface-3.3.0.tar.gz
+wget http://softlayer.dl.sourceforge.net/sourceforge/mysql-python/MySQL-python-1.2.2.tar.gz
+wget http://tmrc.mit.edu/mirror/twisted/Web2/8.1/TwistedWeb2-8.1.0.tar.bz2
+wget http://www.amk.ca/files/python/crypto/pycrypto-2.0.1.tar.gz
+wget http://effbot.org/downloads/Imaging-1.1.6.tar.gz
+wget http://www.sphinxsearch.com/downloads/sphinx-0.9.9-rc2.tar.gz
+
+easy_install simplejson
+
+mv /usr/bin/python /usr/bin/python2.4
+vi /usr/bin/yum (assuming you use vi). Change the first line to read #!/usr/bin/python2.4
+ln -s /usr/local/bin/python /usr/bin/python
+
+yum install freetype freetype-devel jpeg libjpeg-devel libpng libpng-devel
+cd Imaging-1.1.6
+python setup.py build_ext -i
+python selftest.py
+python setup.py install

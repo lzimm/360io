@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE24F1C41048C77100CA5E2F /* datastatic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE24F1C31048C77100CA5E2F /* datastatic.cpp */; };
+		CE24F1C51048C77100CA5E2F /* datastatic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE24F1C31048C77100CA5E2F /* datastatic.cpp */; };
+		CE24F1C61048C77100CA5E2F /* datastatic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE24F1C31048C77100CA5E2F /* datastatic.cpp */; };
+		CE24F1C71048C77100CA5E2F /* datastatic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE24F1C31048C77100CA5E2F /* datastatic.cpp */; };
+		CE41694E10DD87BD000247C2 /* 360log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE41693D10DD8766000247C2 /* 360log.cpp */; };
+		CE41694F10DD87BD000247C2 /* logstore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE41693F10DD8766000247C2 /* logstore.cpp */; };
+		CE41695010DD87BD000247C2 /* logstatic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE41694010DD8766000247C2 /* logstatic.cpp */; };
+		CE41695110DD87BD000247C2 /* logrequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE41694110DD8766000247C2 /* logrequest.cpp */; };
+		CE41695210DD87BD000247C2 /* logcluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE41694310DD8766000247C2 /* logcluster.cpp */; };
+		CE41695310DD87BD000247C2 /* manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE41694410DD8766000247C2 /* manager.cpp */; };
+		CE41695510DD87CD000247C2 /* static.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22CF1039296900115E35 /* static.cpp */; };
+		CE41695610DD87CD000247C2 /* store.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22D11039296900115E35 /* store.cpp */; };
+		CE41695710DD87CD000247C2 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22D31039296900115E35 /* util.cpp */; };
+		CE41695810DD87D8000247C2 /* libjson.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDC21CC1039240C00115E35 /* libjson.dylib */; };
+		CE41695910DD87D8000247C2 /* libev.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDC21CE1039241200115E35 /* libev.dylib */; };
+		CE41695A10DD87D8000247C2 /* libdb_cxx-4.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDC21D91039245400115E35 /* libdb_cxx-4.7.dylib */; };
+		CEDC21CD1039240C00115E35 /* libjson.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDC21CC1039240C00115E35 /* libjson.dylib */; };
+		CEDC21CF1039241200115E35 /* libev.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDC21CE1039241200115E35 /* libev.dylib */; };
+		CEDC21DA1039245400115E35 /* libdb_cxx-4.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDC21D91039245400115E35 /* libdb_cxx-4.7.dylib */; };
+		CEDC21F0103925D400115E35 /* 360base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC21E7103925D400115E35 /* 360base.cpp */; };
+		CEDC21F2103925D400115E35 /* manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC21EA103925D400115E35 /* manager.cpp */; };
+		CEDC21F4103925D400115E35 /* basestatic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC21EE103925D400115E35 /* basestatic.cpp */; };
+		CEDC21FE103925F400115E35 /* libjson.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDC21CC1039240C00115E35 /* libjson.dylib */; };
+		CEDC21FF103925F400115E35 /* libev.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDC21CE1039241200115E35 /* libev.dylib */; };
+		CEDC2200103925F400115E35 /* libdb_cxx-4.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDC21D91039245400115E35 /* libdb_cxx-4.7.dylib */; };
+		CEDC220E103925FF00115E35 /* libjson.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDC21CC1039240C00115E35 /* libjson.dylib */; };
+		CEDC220F103925FF00115E35 /* libev.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDC21CE1039241200115E35 /* libev.dylib */; };
+		CEDC2210103925FF00115E35 /* libdb_cxx-4.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDC21D91039245400115E35 /* libdb_cxx-4.7.dylib */; };
+		CEDC221E1039260600115E35 /* libjson.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDC21CC1039240C00115E35 /* libjson.dylib */; };
+		CEDC221F1039260600115E35 /* libev.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDC21CE1039241200115E35 /* libev.dylib */; };
+		CEDC22201039260600115E35 /* libdb_cxx-4.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDC21D91039245400115E35 /* libdb_cxx-4.7.dylib */; };
+		CEDC22311039269100115E35 /* 360data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22261039269100115E35 /* 360data.cpp */; };
+		CEDC22331039269100115E35 /* datacluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22291039269100115E35 /* datacluster.cpp */; };
+		CEDC22341039269100115E35 /* manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC222B1039269100115E35 /* manager.cpp */; };
+		CEDC22351039269100115E35 /* datarequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC222D1039269100115E35 /* datarequest.cpp */; };
+		CEDC22361039269100115E35 /* datastore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC222F1039269100115E35 /* datastore.cpp */; };
+		CEDC2242103926AC00115E35 /* 360sync.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2237103926AC00115E35 /* 360sync.cpp */; };
+		CEDC2244103926AC00115E35 /* synccluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC223A103926AC00115E35 /* synccluster.cpp */; };
+		CEDC2245103926AC00115E35 /* manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC223C103926AC00115E35 /* manager.cpp */; };
+		CEDC2246103926AC00115E35 /* syncrequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC223E103926AC00115E35 /* syncrequest.cpp */; };
+		CEDC2247103926AC00115E35 /* syncstore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2240103926AC00115E35 /* syncstore.cpp */; };
+		CEDC2257103926BD00115E35 /* 360comm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2248103926BD00115E35 /* 360comm.cpp */; };
+		CEDC2258103926BD00115E35 /* channel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2249103926BD00115E35 /* channel.cpp */; };
+		CEDC2259103926BD00115E35 /* client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC224B103926BD00115E35 /* client.cpp */; };
+		CEDC225A103926BD00115E35 /* commcluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC224D103926BD00115E35 /* commcluster.cpp */; };
+		CEDC225B103926BD00115E35 /* dispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC224F103926BD00115E35 /* dispatcher.cpp */; };
+		CEDC225C103926BD00115E35 /* manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2251103926BD00115E35 /* manager.cpp */; };
+		CEDC225D103926BD00115E35 /* commrequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2253103926BD00115E35 /* commrequest.cpp */; };
+		CEDC225E103926BD00115E35 /* commstatic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2255103926BD00115E35 /* commstatic.cpp */; };
+		CEDC228E1039285D00115E35 /* baserequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC228B1039285D00115E35 /* baserequest.cpp */; };
+		CEDC22D81039296900115E35 /* static.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22CF1039296900115E35 /* static.cpp */; };
+		CEDC22D91039296900115E35 /* store.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22D11039296900115E35 /* store.cpp */; };
+		CEDC22DA1039296900115E35 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22D31039296900115E35 /* util.cpp */; };
+		CEDC22DE1039296900115E35 /* static.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22CF1039296900115E35 /* static.cpp */; };
+		CEDC22DF1039296900115E35 /* store.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22D11039296900115E35 /* store.cpp */; };
+		CEDC22E01039296900115E35 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22D31039296900115E35 /* util.cpp */; };
+		CEDC22EA1039296900115E35 /* static.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22CF1039296900115E35 /* static.cpp */; };
+		CEDC22EB1039296900115E35 /* store.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22D11039296900115E35 /* store.cpp */; };
+		CEDC22EC1039296900115E35 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22D31039296900115E35 /* util.cpp */; };
+		CEDC236610392D2A00115E35 /* static.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22CF1039296900115E35 /* static.cpp */; };
+		CEDC236810392D2A00115E35 /* store.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22D11039296900115E35 /* store.cpp */; };
+		CEDC236A10392D2A00115E35 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEDC22D31039296900115E35 /* util.cpp */; };
+		CEE41E8610FC14C00040A13C /* conn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEE41E8410FC14C00040A13C /* conn.cpp */; };
+		CEE41E8710FC14C00040A13C /* conn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEE41E8410FC14C00040A13C /* conn.cpp */; };
+		CEE41E8810FC14C00040A13C /* conn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEE41E8410FC14C00040A13C /* conn.cpp */; };
+		CEE41E8910FC14C00040A13C /* conn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEE41E8410FC14C00040A13C /* conn.cpp */; };
+		CEE41E8A10FC14C00040A13C /* conn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEE41E8410FC14C00040A13C /* conn.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE24F1C21048C77100CA5E2F /* datastatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = datastatic.h; path = ../data/src/datastatic.h; sourceTree = SOURCE_ROOT; };
+		CE24F1C31048C77100CA5E2F /* datastatic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = datastatic.cpp; path = ../data/src/datastatic.cpp; sourceTree = SOURCE_ROOT; };
+		CE41693B10DD8766000247C2 /* logrequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = logrequest.h; path = ../log/src/logrequest.h; sourceTree = SOURCE_ROOT; };
+		CE41693C10DD8766000247C2 /* logstatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = logstatic.h; path = ../log/src/logstatic.h; sourceTree = SOURCE_ROOT; };
+		CE41693D10DD8766000247C2 /* 360log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 360log.cpp; path = ../log/src/360log.cpp; sourceTree = SOURCE_ROOT; };
+		CE41693E10DD8766000247C2 /* logstore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = logstore.h; path = ../log/src/logstore.h; sourceTree = SOURCE_ROOT; };
+		CE41693F10DD8766000247C2 /* logstore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = logstore.cpp; path = ../log/src/logstore.cpp; sourceTree = SOURCE_ROOT; };
+		CE41694010DD8766000247C2 /* logstatic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = logstatic.cpp; path = ../log/src/logstatic.cpp; sourceTree = SOURCE_ROOT; };
+		CE41694110DD8766000247C2 /* logrequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = logrequest.cpp; path = ../log/src/logrequest.cpp; sourceTree = SOURCE_ROOT; };
+		CE41694210DD8766000247C2 /* logcluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = logcluster.h; path = ../log/src/logcluster.h; sourceTree = SOURCE_ROOT; };
+		CE41694310DD8766000247C2 /* logcluster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = logcluster.cpp; path = ../log/src/logcluster.cpp; sourceTree = SOURCE_ROOT; };
+		CE41694410DD8766000247C2 /* manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = manager.cpp; path = ../log/src/manager.cpp; sourceTree = SOURCE_ROOT; };
+		CE41694510DD8766000247C2 /* manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = manager.h; path = ../log/src/manager.h; sourceTree = SOURCE_ROOT; };
+		CE41694910DD8774000247C2 /* 360log */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 360log; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDC21BE103923C600115E35 /* 360base */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 360base; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDC21CC1039240C00115E35 /* libjson.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjson.dylib; path = usr/local/lib/libjson.dylib; sourceTree = SDKROOT; };
+		CEDC21CE1039241200115E35 /* libev.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libev.dylib; path = usr/local/lib/libev.dylib; sourceTree = SDKROOT; };
+		CEDC21D91039245400115E35 /* libdb_cxx-4.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libdb_cxx-4.7.dylib"; path = "/usr/local/BerkeleyDB.4.7/lib/libdb_cxx-4.7.dylib"; sourceTree = "<absolute>"; };
+		CEDC21E7103925D400115E35 /* 360base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 360base.cpp; path = ../base/src/360base.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC21EA103925D400115E35 /* manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = manager.cpp; path = ../base/src/manager.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC21EB103925D400115E35 /* manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = manager.h; path = ../base/src/manager.h; sourceTree = SOURCE_ROOT; };
+		CEDC21EE103925D400115E35 /* basestatic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = basestatic.cpp; path = ../base/src/basestatic.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC21EF103925D400115E35 /* basestatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = basestatic.h; path = ../base/src/basestatic.h; sourceTree = SOURCE_ROOT; };
+		CEDC2204103925F400115E35 /* 360data */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 360data; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDC2214103925FF00115E35 /* 360comm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 360comm; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDC22241039260600115E35 /* 360sync */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 360sync; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDC22261039269100115E35 /* 360data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 360data.cpp; path = ../data/src/360data.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC22291039269100115E35 /* datacluster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = datacluster.cpp; path = ../data/src/datacluster.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC222A1039269100115E35 /* datacluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = datacluster.h; path = ../data/src/datacluster.h; sourceTree = SOURCE_ROOT; };
+		CEDC222B1039269100115E35 /* manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = manager.cpp; path = ../data/src/manager.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC222C1039269100115E35 /* manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = manager.h; path = ../data/src/manager.h; sourceTree = SOURCE_ROOT; };
+		CEDC222D1039269100115E35 /* datarequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = datarequest.cpp; path = ../data/src/datarequest.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC222E1039269100115E35 /* datarequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = datarequest.h; path = ../data/src/datarequest.h; sourceTree = SOURCE_ROOT; };
+		CEDC222F1039269100115E35 /* datastore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = datastore.cpp; path = ../data/src/datastore.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC22301039269100115E35 /* datastore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = datastore.h; path = ../data/src/datastore.h; sourceTree = SOURCE_ROOT; };
+		CEDC2237103926AC00115E35 /* 360sync.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 360sync.cpp; path = ../sync/src/360sync.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC223A103926AC00115E35 /* synccluster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = synccluster.cpp; path = ../sync/src/synccluster.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC223B103926AC00115E35 /* synccluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = synccluster.h; path = ../sync/src/synccluster.h; sourceTree = SOURCE_ROOT; };
+		CEDC223C103926AC00115E35 /* manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = manager.cpp; path = ../sync/src/manager.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC223D103926AC00115E35 /* manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = manager.h; path = ../sync/src/manager.h; sourceTree = SOURCE_ROOT; };
+		CEDC223E103926AC00115E35 /* syncrequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = syncrequest.cpp; path = ../sync/src/syncrequest.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC223F103926AC00115E35 /* syncrequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = syncrequest.h; path = ../sync/src/syncrequest.h; sourceTree = SOURCE_ROOT; };
+		CEDC2240103926AC00115E35 /* syncstore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = syncstore.cpp; path = ../sync/src/syncstore.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC2241103926AC00115E35 /* syncstore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = syncstore.h; path = ../sync/src/syncstore.h; sourceTree = SOURCE_ROOT; };
+		CEDC2248103926BD00115E35 /* 360comm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = 360comm.cpp; path = ../comm/src/360comm.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC2249103926BD00115E35 /* channel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = channel.cpp; path = ../comm/src/channel.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC224A103926BD00115E35 /* channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = channel.h; path = ../comm/src/channel.h; sourceTree = SOURCE_ROOT; };
+		CEDC224B103926BD00115E35 /* client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = client.cpp; path = ../comm/src/client.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC224C103926BD00115E35 /* client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = client.h; path = ../comm/src/client.h; sourceTree = SOURCE_ROOT; };
+		CEDC224D103926BD00115E35 /* commcluster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = commcluster.cpp; path = ../comm/src/commcluster.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC224E103926BD00115E35 /* commcluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = commcluster.h; path = ../comm/src/commcluster.h; sourceTree = SOURCE_ROOT; };
+		CEDC224F103926BD00115E35 /* dispatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dispatcher.cpp; path = ../comm/src/dispatcher.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC2250103926BD00115E35 /* dispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dispatcher.h; path = ../comm/src/dispatcher.h; sourceTree = SOURCE_ROOT; };
+		CEDC2251103926BD00115E35 /* manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = manager.cpp; path = ../comm/src/manager.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC2252103926BD00115E35 /* manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = manager.h; path = ../comm/src/manager.h; sourceTree = SOURCE_ROOT; };
+		CEDC2253103926BD00115E35 /* commrequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = commrequest.cpp; path = ../comm/src/commrequest.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC2254103926BD00115E35 /* commrequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = commrequest.h; path = ../comm/src/commrequest.h; sourceTree = SOURCE_ROOT; };
+		CEDC2255103926BD00115E35 /* commstatic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = commstatic.cpp; path = ../comm/src/commstatic.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC2256103926BD00115E35 /* commstatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = commstatic.h; path = ../comm/src/commstatic.h; sourceTree = SOURCE_ROOT; };
+		CEDC228A1039285D00115E35 /* baserequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = baserequest.h; path = ../base/src/baserequest.h; sourceTree = SOURCE_ROOT; };
+		CEDC228B1039285D00115E35 /* baserequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = baserequest.cpp; path = ../base/src/baserequest.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC22C91039296900115E35 /* cluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cluster.h; path = ../shared/src/shared/cluster.h; sourceTree = SOURCE_ROOT; };
+		CEDC22CA1039296900115E35 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../shared/src/shared/config.h; sourceTree = SOURCE_ROOT; };
+		CEDC22CE1039296900115E35 /* request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = request.h; path = ../shared/src/shared/request.h; sourceTree = SOURCE_ROOT; };
+		CEDC22CF1039296900115E35 /* static.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = static.cpp; path = ../shared/src/shared/static.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC22D01039296900115E35 /* static.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = static.h; path = ../shared/src/shared/static.h; sourceTree = SOURCE_ROOT; };
+		CEDC22D11039296900115E35 /* store.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = store.cpp; path = ../shared/src/shared/store.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC22D21039296900115E35 /* store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = store.h; path = ../shared/src/shared/store.h; sourceTree = SOURCE_ROOT; };
+		CEDC22D31039296900115E35 /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = ../shared/src/shared/util.cpp; sourceTree = SOURCE_ROOT; };
+		CEDC22D41039296900115E35 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = ../shared/src/shared/util.h; sourceTree = SOURCE_ROOT; };
+		CEE41E8410FC14C00040A13C /* conn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = conn.cpp; path = ../shared/src/shared/conn.cpp; sourceTree = SOURCE_ROOT; };
+		CEE41E8510FC14C00040A13C /* conn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = conn.h; path = ../shared/src/shared/conn.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE41694710DD8774000247C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE41695810DD87D8000247C2 /* libjson.dylib in Frameworks */,
+				CE41695910DD87D8000247C2 /* libev.dylib in Frameworks */,
+				CE41695A10DD87D8000247C2 /* libdb_cxx-4.7.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC21BC103923C600115E35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC21CD1039240C00115E35 /* libjson.dylib in Frameworks */,
+				CEDC21CF1039241200115E35 /* libev.dylib in Frameworks */,
+				CEDC21DA1039245400115E35 /* libdb_cxx-4.7.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC21FD103925F400115E35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC21FE103925F400115E35 /* libjson.dylib in Frameworks */,
+				CEDC21FF103925F400115E35 /* libev.dylib in Frameworks */,
+				CEDC2200103925F400115E35 /* libdb_cxx-4.7.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC220D103925FF00115E35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC220E103925FF00115E35 /* libjson.dylib in Frameworks */,
+				CEDC220F103925FF00115E35 /* libev.dylib in Frameworks */,
+				CEDC2210103925FF00115E35 /* libdb_cxx-4.7.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC221D1039260600115E35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC221E1039260600115E35 /* libjson.dylib in Frameworks */,
+				CEDC221F1039260600115E35 /* libev.dylib in Frameworks */,
+				CEDC22201039260600115E35 /* libdb_cxx-4.7.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* 360io */ = {
+			isa = PBXGroup;
+			children = (
+				CE41693A10DD874E000247C2 /* 360log */,
+				CEDC22C71039294400115E35 /* shared */,
+				CEDC21E6103925B400115E35 /* 360data */,
+				CEDC21E5103925A900115E35 /* 360sync */,
+				CEDC21E4103925A400115E35 /* 360comm */,
+				CEDC21E21039259600115E35 /* 360base */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				CEDC21CC1039240C00115E35 /* libjson.dylib */,
+				CEDC21CE1039241200115E35 /* libev.dylib */,
+				CEDC21D91039245400115E35 /* libdb_cxx-4.7.dylib */,
+			);
+			name = 360io;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC21BE103923C600115E35 /* 360base */,
+				CEDC2204103925F400115E35 /* 360data */,
+				CEDC2214103925FF00115E35 /* 360comm */,
+				CEDC22241039260600115E35 /* 360sync */,
+				CE41694910DD8774000247C2 /* 360log */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE41693A10DD874E000247C2 /* 360log */ = {
+			isa = PBXGroup;
+			children = (
+				CE41693B10DD8766000247C2 /* logrequest.h */,
+				CE41693C10DD8766000247C2 /* logstatic.h */,
+				CE41693D10DD8766000247C2 /* 360log.cpp */,
+				CE41693E10DD8766000247C2 /* logstore.h */,
+				CE41693F10DD8766000247C2 /* logstore.cpp */,
+				CE41694010DD8766000247C2 /* logstatic.cpp */,
+				CE41694110DD8766000247C2 /* logrequest.cpp */,
+				CE41694210DD8766000247C2 /* logcluster.h */,
+				CE41694310DD8766000247C2 /* logcluster.cpp */,
+				CE41694410DD8766000247C2 /* manager.cpp */,
+				CE41694510DD8766000247C2 /* manager.h */,
+			);
+			name = 360log;
+			sourceTree = "<group>";
+		};
+		CEDC21E21039259600115E35 /* 360base */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC21E7103925D400115E35 /* 360base.cpp */,
+				CEDC21EB103925D400115E35 /* manager.h */,
+				CEDC21EA103925D400115E35 /* manager.cpp */,
+				CEDC21EF103925D400115E35 /* basestatic.h */,
+				CEDC21EE103925D400115E35 /* basestatic.cpp */,
+				CEDC228A1039285D00115E35 /* baserequest.h */,
+				CEDC228B1039285D00115E35 /* baserequest.cpp */,
+			);
+			name = 360base;
+			sourceTree = "<group>";
+		};
+		CEDC21E4103925A400115E35 /* 360comm */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC2248103926BD00115E35 /* 360comm.cpp */,
+				CEDC2249103926BD00115E35 /* channel.cpp */,
+				CEDC224A103926BD00115E35 /* channel.h */,
+				CEDC224B103926BD00115E35 /* client.cpp */,
+				CEDC224C103926BD00115E35 /* client.h */,
+				CEDC224D103926BD00115E35 /* commcluster.cpp */,
+				CEDC224E103926BD00115E35 /* commcluster.h */,
+				CEDC224F103926BD00115E35 /* dispatcher.cpp */,
+				CEDC2250103926BD00115E35 /* dispatcher.h */,
+				CEDC2251103926BD00115E35 /* manager.cpp */,
+				CEDC2252103926BD00115E35 /* manager.h */,
+				CEDC2253103926BD00115E35 /* commrequest.cpp */,
+				CEDC2254103926BD00115E35 /* commrequest.h */,
+				CEDC2255103926BD00115E35 /* commstatic.cpp */,
+				CEDC2256103926BD00115E35 /* commstatic.h */,
+			);
+			name = 360comm;
+			sourceTree = "<group>";
+		};
+		CEDC21E5103925A900115E35 /* 360sync */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC2237103926AC00115E35 /* 360sync.cpp */,
+				CEDC223A103926AC00115E35 /* synccluster.cpp */,
+				CEDC223B103926AC00115E35 /* synccluster.h */,
+				CEDC223C103926AC00115E35 /* manager.cpp */,
+				CEDC223D103926AC00115E35 /* manager.h */,
+				CEDC223E103926AC00115E35 /* syncrequest.cpp */,
+				CEDC223F103926AC00115E35 /* syncrequest.h */,
+				CEDC2240103926AC00115E35 /* syncstore.cpp */,
+				CEDC2241103926AC00115E35 /* syncstore.h */,
+			);
+			name = 360sync;
+			sourceTree = "<group>";
+		};
+		CEDC21E6103925B400115E35 /* 360data */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC22261039269100115E35 /* 360data.cpp */,
+				CEDC222A1039269100115E35 /* datacluster.h */,
+				CEDC22291039269100115E35 /* datacluster.cpp */,
+				CEDC222C1039269100115E35 /* manager.h */,
+				CEDC222B1039269100115E35 /* manager.cpp */,
+				CEDC222E1039269100115E35 /* datarequest.h */,
+				CEDC222D1039269100115E35 /* datarequest.cpp */,
+				CEDC22301039269100115E35 /* datastore.h */,
+				CEDC222F1039269100115E35 /* datastore.cpp */,
+				CE24F1C21048C77100CA5E2F /* datastatic.h */,
+				CE24F1C31048C77100CA5E2F /* datastatic.cpp */,
+			);
+			name = 360data;
+			sourceTree = "<group>";
+		};
+		CEDC22C71039294400115E35 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				CEE41E8410FC14C00040A13C /* conn.cpp */,
+				CEE41E8510FC14C00040A13C /* conn.h */,
+				CEDC22C91039296900115E35 /* cluster.h */,
+				CEDC22CA1039296900115E35 /* config.h */,
+				CEDC22CE1039296900115E35 /* request.h */,
+				CEDC22CF1039296900115E35 /* static.cpp */,
+				CEDC22D01039296900115E35 /* static.h */,
+				CEDC22D11039296900115E35 /* store.cpp */,
+				CEDC22D21039296900115E35 /* store.h */,
+				CEDC22D31039296900115E35 /* util.cpp */,
+				CEDC22D41039296900115E35 /* util.h */,
+			);
+			name = shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE41694810DD8774000247C2 /* 360log */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE41694D10DD8793000247C2 /* Build configuration list for PBXNativeTarget "360log" */;
+			buildPhases = (
+				CE41694610DD8774000247C2 /* Sources */,
+				CE41694710DD8774000247C2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 360log;
+			productName = 360log;
+			productReference = CE41694910DD8774000247C2 /* 360log */;
+			productType = "com.apple.product-type.tool";
+		};
+		CEDC21BD103923C600115E35 /* 360base */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDC21CA103923E500115E35 /* Build configuration list for PBXNativeTarget "360base" */;
+			buildPhases = (
+				CEDC21BB103923C600115E35 /* Sources */,
+				CEDC21BC103923C600115E35 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 360base;
+			productName = base;
+			productReference = CEDC21BE103923C600115E35 /* 360base */;
+			productType = "com.apple.product-type.tool";
+		};
+		CEDC21F6103925F400115E35 /* 360data */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDC2201103925F400115E35 /* Build configuration list for PBXNativeTarget "360data" */;
+			buildPhases = (
+				CEDC21F7103925F400115E35 /* Sources */,
+				CEDC21FD103925F400115E35 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 360data;
+			productName = base;
+			productReference = CEDC2204103925F400115E35 /* 360data */;
+			productType = "com.apple.product-type.tool";
+		};
+		CEDC2206103925FF00115E35 /* 360comm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDC2211103925FF00115E35 /* Build configuration list for PBXNativeTarget "360comm" */;
+			buildPhases = (
+				CEDC2207103925FF00115E35 /* Sources */,
+				CEDC220D103925FF00115E35 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 360comm;
+			productName = base;
+			productReference = CEDC2214103925FF00115E35 /* 360comm */;
+			productType = "com.apple.product-type.tool";
+		};
+		CEDC22161039260600115E35 /* 360sync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDC22211039260600115E35 /* Build configuration list for PBXNativeTarget "360sync" */;
+			buildPhases = (
+				CEDC22171039260600115E35 /* Sources */,
+				CEDC221D1039260600115E35 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 360sync;
+			productName = base;
+			productReference = CEDC22241039260600115E35 /* 360sync */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "360io" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* 360io */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEDC21BD103923C600115E35 /* 360base */,
+				CEDC21F6103925F400115E35 /* 360data */,
+				CEDC2206103925FF00115E35 /* 360comm */,
+				CEDC22161039260600115E35 /* 360sync */,
+				CE41694810DD8774000247C2 /* 360log */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE41694610DD8774000247C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE41695510DD87CD000247C2 /* static.cpp in Sources */,
+				CE41695610DD87CD000247C2 /* store.cpp in Sources */,
+				CE41695710DD87CD000247C2 /* util.cpp in Sources */,
+				CE41694E10DD87BD000247C2 /* 360log.cpp in Sources */,
+				CE41694F10DD87BD000247C2 /* logstore.cpp in Sources */,
+				CE41695010DD87BD000247C2 /* logstatic.cpp in Sources */,
+				CE41695110DD87BD000247C2 /* logrequest.cpp in Sources */,
+				CE41695210DD87BD000247C2 /* logcluster.cpp in Sources */,
+				CE41695310DD87BD000247C2 /* manager.cpp in Sources */,
+				CEE41E8610FC14C00040A13C /* conn.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC21BB103923C600115E35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC21F0103925D400115E35 /* 360base.cpp in Sources */,
+				CEDC21F2103925D400115E35 /* manager.cpp in Sources */,
+				CEDC21F4103925D400115E35 /* basestatic.cpp in Sources */,
+				CEDC228E1039285D00115E35 /* baserequest.cpp in Sources */,
+				CEDC236610392D2A00115E35 /* static.cpp in Sources */,
+				CEDC236810392D2A00115E35 /* store.cpp in Sources */,
+				CEDC236A10392D2A00115E35 /* util.cpp in Sources */,
+				CE24F1C61048C77100CA5E2F /* datastatic.cpp in Sources */,
+				CEE41E8710FC14C00040A13C /* conn.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC21F7103925F400115E35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC22311039269100115E35 /* 360data.cpp in Sources */,
+				CEDC22331039269100115E35 /* datacluster.cpp in Sources */,
+				CEDC22341039269100115E35 /* manager.cpp in Sources */,
+				CEDC22351039269100115E35 /* datarequest.cpp in Sources */,
+				CEDC22361039269100115E35 /* datastore.cpp in Sources */,
+				CEDC22EA1039296900115E35 /* static.cpp in Sources */,
+				CEDC22EB1039296900115E35 /* store.cpp in Sources */,
+				CEDC22EC1039296900115E35 /* util.cpp in Sources */,
+				CE24F1C41048C77100CA5E2F /* datastatic.cpp in Sources */,
+				CEE41E8810FC14C00040A13C /* conn.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC2207103925FF00115E35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC2257103926BD00115E35 /* 360comm.cpp in Sources */,
+				CEDC2258103926BD00115E35 /* channel.cpp in Sources */,
+				CEDC2259103926BD00115E35 /* client.cpp in Sources */,
+				CEDC225A103926BD00115E35 /* commcluster.cpp in Sources */,
+				CEDC225B103926BD00115E35 /* dispatcher.cpp in Sources */,
+				CEDC225C103926BD00115E35 /* manager.cpp in Sources */,
+				CEDC225D103926BD00115E35 /* commrequest.cpp in Sources */,
+				CEDC225E103926BD00115E35 /* commstatic.cpp in Sources */,
+				CEDC22DE1039296900115E35 /* static.cpp in Sources */,
+				CEDC22DF1039296900115E35 /* store.cpp in Sources */,
+				CEDC22E01039296900115E35 /* util.cpp in Sources */,
+				CE24F1C51048C77100CA5E2F /* datastatic.cpp in Sources */,
+				CEE41E8910FC14C00040A13C /* conn.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC22171039260600115E35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC2242103926AC00115E35 /* 360sync.cpp in Sources */,
+				CEDC2244103926AC00115E35 /* synccluster.cpp in Sources */,
+				CEDC2245103926AC00115E35 /* manager.cpp in Sources */,
+				CEDC2246103926AC00115E35 /* syncrequest.cpp in Sources */,
+				CEDC2247103926AC00115E35 /* syncstore.cpp in Sources */,
+				CEDC22D81039296900115E35 /* static.cpp in Sources */,
+				CEDC22D91039296900115E35 /* store.cpp in Sources */,
+				CEDC22DA1039296900115E35 /* util.cpp in Sources */,
+				CE24F1C71048C77100CA5E2F /* datastatic.cpp in Sources */,
+				CEE41E8A10FC14C00040A13C /* conn.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		CE41694B10DD8775000247C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/Dropbox/360io/server/shared/src/,
+					/Dropbox/deps/jsoncpp/trunk/jsoncpp/include/,
+					/usr/local/include,
+					/usr/local/BerkeleyDB.4.7/include,
+				);
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/BerkeleyDB.4.7/lib,
+				);
+				OTHER_CFLAGS = (
+					"-lev",
+					"-ldb_cxx-4.7",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = 360log;
+			};
+			name = Debug;
+		};
+		CE41694C10DD8775000247C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/BerkeleyDB.4.7/lib,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = 360log;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		CEDC21C0103923C700115E35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					/Dropbox/360io/server/shared/src/,
+					/Dropbox/deps/jsoncpp/trunk/jsoncpp/include/,
+					/usr/local/include,
+					/usr/local/BerkeleyDB.4.7/include,
+				);
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/BerkeleyDB.4.7/lib,
+				);
+				OTHER_CFLAGS = (
+					"-lev",
+					"-ldb_cxx-4.7",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = 360base;
+			};
+			name = Debug;
+		};
+		CEDC21C1103923C700115E35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/BerkeleyDB.4.7/lib,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = base;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		CEDC2202103925F400115E35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					/Dropbox/360io/server/shared/src/,
+					/Dropbox/deps/jsoncpp/trunk/jsoncpp/include/,
+					/usr/local/include,
+					/usr/local/BerkeleyDB.4.7/include,
+				);
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/BerkeleyDB.4.7/lib,
+				);
+				OTHER_CFLAGS = (
+					"-lev",
+					"-ldb_cxx-4.7",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = 360data;
+			};
+			name = Debug;
+		};
+		CEDC2203103925F400115E35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/BerkeleyDB.4.7/lib,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = base;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		CEDC2212103925FF00115E35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					/Dropbox/360io/server/shared/src/,
+					/Dropbox/deps/jsoncpp/trunk/jsoncpp/include/,
+					/usr/local/include,
+					/usr/local/BerkeleyDB.4.7/include,
+				);
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/BerkeleyDB.4.7/lib,
+				);
+				OTHER_CFLAGS = (
+					"-lev",
+					"-ldb_cxx-4.7",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = 360comm;
+			};
+			name = Debug;
+		};
+		CEDC2213103925FF00115E35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/BerkeleyDB.4.7/lib,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = base;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		CEDC22221039260600115E35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					/Dropbox/360io/server/shared/src/,
+					/Dropbox/deps/jsoncpp/trunk/jsoncpp/include/,
+					/usr/local/include,
+					/usr/local/BerkeleyDB.4.7/include,
+				);
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/BerkeleyDB.4.7/lib,
+				);
+				OTHER_CFLAGS = (
+					"-lev",
+					"-ldb_cxx-4.7",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = 360sync;
+			};
+			name = Debug;
+		};
+		CEDC22231039260600115E35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/BerkeleyDB.4.7/lib,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = base;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "360io" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE41694D10DD8793000247C2 /* Build configuration list for PBXNativeTarget "360log" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE41694B10DD8775000247C2 /* Debug */,
+				CE41694C10DD8775000247C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDC21CA103923E500115E35 /* Build configuration list for PBXNativeTarget "360base" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDC21C0103923C700115E35 /* Debug */,
+				CEDC21C1103923C700115E35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDC2201103925F400115E35 /* Build configuration list for PBXNativeTarget "360data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDC2202103925F400115E35 /* Debug */,
+				CEDC2203103925F400115E35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDC2211103925FF00115E35 /* Build configuration list for PBXNativeTarget "360comm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDC2212103925FF00115E35 /* Debug */,
+				CEDC2213103925FF00115E35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDC22211039260600115E35 /* Build configuration list for PBXNativeTarget "360sync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDC22221039260600115E35 /* Debug */,
+				CEDC22231039260600115E35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

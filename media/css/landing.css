@@ -1,0 +1,19 @@
+#_float_publisher { position: static; display: block; top: 0; bottom: auto; background: transparent; border: none; margin: 0 auto; padding-bottom: 50px; }
+#_float_publisher a._btn_close { display: none; }
+#_float_publisher div._internal { padding-top: 50px; }
+#_float_publisher div._shadow_t, #_float_publisher div._shadow_b, #_float_publisher div._shadow_l, #_float_publisher div._shadow_r { display: none; }
+#_float_publisher div._shadow_tl, #_float_publisher div._shadow_tr, #_float_publisher div._shadow_bl, #_float_publisher div._shadow_br { display: none; }
+
+#_content { margin: 0; text-align: left; border-top: none; }
+#_content div { display: block; float: left; width: 300px; }
+#_content div p { font-weight: normal; margin: 0; padding: 15px 30px; font-size: 11px; line-height: 18px; color: #666; position: relative; border-top: none; }
+#_content div p span { position: absolute; top: 10px; left: 20px; right: 20px; }
+#_content div p span.shadow { top: 11px; left: 21px; right: 19px; color: #000; }
+#_content div p a { color: #ff0000; font-weight: bold; }
+
+#_content_ div.about { background: transparent url(http://media.360.io/img/landing/about.png) center 40px no-repeat; }
+#_content_ div.blog { background: transparent url(http://media.360.io/img/landing/blog.png) center 40px no-repeat; }
+#_content_ div.twitter { background: transparent url(http://media.360.io/img/landing/twitter.png) center 40px no-repeat; }
+
+body { overflow-y: auto; background: #111 url(../img/landing/bg.jpg) bottom center no-repeat; }
+html {}

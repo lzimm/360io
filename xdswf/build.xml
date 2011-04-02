@@ -1,0 +1,23 @@
+<project name="xdswf" default="compile">
+  <property name="flex.mxmlc" location="/Applications/Adobe Flex Builder 3/sdks/3.0.0/bin/mxmlc" />
+  <property name="flash.player" value="'/Applications/Adobe Flash CS3/Players/Flash Player.app'"  />
+
+  <property name="src" value="xdswf.as" />
+  <property name="dest.dir" value="../media/" />
+  <property name="dest.swf" value="xd.swf" />
+  
+  <target name="init">
+    <!--
+    <delete dir="${dest.dir}" />
+    <mkdir dir="${dest.dir}" />
+    -->
+  </target>
+
+  <target name="compile" depends="init">
+    <exec executable="${flex.mxmlc}" failonerror="true">
+      <!-- <arg line="-debug=true" /> -->
+      <arg line="-output '${dest.dir}/${dest.swf}'" />
+      <arg line="${src}" />
+    </exec>
+  </target>
+</project>
